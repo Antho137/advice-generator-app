@@ -1,0 +1,92 @@
+body {
+    max-width: 1440px;
+    min-width: 320px;
+    margin: 0;
+    width: 100vw;
+    min-height: 100vh;
+    overflow-x: hidden;
+    background-color: hsl(218, 23%, 16%);
+}
+
+#first, #second {
+    margin: 0;
+}
+
+#main {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+}
+
+#main {
+    margin: 200px 20px 0;
+    padding: 30px;
+    border-radius: 10px;
+    color: hsl(193, 38%, 86%);
+    background-color: hsl(217, 19%, 24%);
+}
+
+.advice-id, #advice-number {
+    text-align: center;
+    text-transform: uppercase;
+    color: hsl(150, 100%, 66%);
+}
+
+#diceBtn {
+    padding: 10px;
+    position: relative;
+    margin-bottom: -55px;
+    border-radius: 30px;
+    background-color: hsl(150, 100%, 66%);
+}
+
+#desktopDiv {
+    display: none;
+}
+
+#mobileDiv {
+    display: block;
+    margin: 0 0 30px;
+}
+
+#foot {
+    margin: 50px 20px;
+    text-align: center;
+    color: hsl(193, 38%, 86%);
+}
+
+@media only screen and (min-width: 768px) {    
+
+    #main {
+        max-width: 70%;
+        margin: 170px auto 30px;
+    }
+
+    #desktopDiv {
+        display: block;
+        margin: 0 0 30px;
+    }
+    
+    #mobileDiv {
+        display: none;
+    } 
+}
+
+@media only screen and (min-width: 992px) {    
+
+    #main {
+        max-width: 60%;
+        margin: 200px auto 30px;
+    }
+}
+
+@media only screen and (min-width: 1200px) {    
+
+    #main {
+        width: 40%;
+        margin: 250px auto 30px;
+    }
+}
